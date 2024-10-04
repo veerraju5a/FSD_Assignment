@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+
+        .subject {
+            font-weight: bold;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .orange {
+            color: orange;
+        }
+
+        .purple {
+            color: purple;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .black {
+            color: black;
+        }
+
+        .vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>COLLEGE TIME TABLE</h1>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>8:30-9:30</th>
+            <th>9:30-10:30</th>
+            <th>10:30-11:30</th>
+            <th>11:30-12:30</th>
+            <th>12:30-2:00</th>   
+            <th>2:00-3:00</th>
+            <th>3:00-4:00</th>
+            <th>4:00-5:00</th>
+        </tr>
+        <tr>
+            <td>MONDAY</td>
+            <td>---</td>
+            <td class="subject blue">SUB1</td>
+            <td class="subject orange">SUB2</td>
+            <td class="subject purple">SUB3</td>
+            <th class="vertical-text" rowspan="6">LUNCH</th>
+            <td class="subject green">SUB4</td>
+            <td class="subject red">SUB5</td>
+            <td class="subject black">COUNSELLING CLASS</td>
+        </tr>
+        <tr>
+            <td>TUESDAY</td>
+            <td class="subject blue">SUB1</td>
+            <td class="subject orange">SUB2</td>
+            <td class="subject purple">SUB3</td>
+            <td>---</td>
+            <td class="subject orange">SUB2</td>
+            <td class="subject orange">SUB2</td>
+            <td>LIBRARY</td>
+        </tr>
+        <tr>
+            <td>WEDNESDAY</td>
+            <td class="subject blue">SUB1</td>
+            <td class="subject orange">SUB2</td>
+            <td class="subject red">SWA</td>
+            <td>---</td>
+            <td>LAB</td>
+            <td class="subject orange">SUB2</td>
+            <td class="subject orange">SUB2</td>
+            
+        </tr>
+        <tr>
+            <td>THURSDAY</td>
+            <td class="subject blue">SUB1</td>
+            <td class="subject orange">SUB2</td>
+            <td class="subject purple">SUB3</td>
+            <td>---</td>
+            <td class="subject green">SUB4</td>
+            <td class="subject red">SUB5</td>
+            <td>LIBRARY</td>
+        </tr>
+        <tr>
+            <td>FRIDAY</td>
+            <td class="subject blue">SUB1</td>
+            <td class="subject orange">SUB2</td>
+            <td class="subject purple">SUB3</td>
+            <td class="subject black">SEMINAR</td>
+            <td class="subject green">SUB4</td>
+            <td class="subject red">SUB5</td>
+            <td>LIBRARY</td>
+        </tr>
+        <tr>
+            <td>SATURDAY</td>
+            <td class="subject blue">SUB1</td>
+            <td colspan="3" class="subject black">SEMINAR</td>
+            <td class="subject green">SUB4</td>
+            <td class="subject red">SUB5</td>
+            <td>LIBRARY</td>
+        </tr>
+    </table>
+</body>
+</html>
