@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: black;
+        }
+        form {
+            width: 400px; /* Increase form width to accommodate inputs */
+            margin-top: 20px;
+        }
+        .form-group {
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center align items vertically */
+            margin-bottom: 10px; /* Space between form groups */
+        }
+        label {
+            width: 150px; /* Fixed width for labels */
+            margin-right: 10px; /* Space between label and input */
+        }
+        input[type="text"],
+        input[type="password"] {
+            flex: 1; /* Allow input to take remaining space */
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 8px 16px;
+            background-color: lightgray;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Fill below form to register</h2>
+    <form action="#">
+        <div class="form-group">
+            <label for="id">Enter your Id:</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div class="form-group">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>

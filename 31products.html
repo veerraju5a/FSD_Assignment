@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Helvetica, Arial, Verdana;
+        }
+        h1 {
+            color: green;
+            text-align: center;
+        }
+        .search-wrapper {
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .prod {
+            margin-right:auto;
+            font-weight: bold;
+        }
+        .search-box {
+            width: 80%;
+            border: 2px solid #ccc;
+            outline: 0;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        .close-icon {
+            border: 1px solid transparent;
+            background-color: transparent;
+            outline: 0;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .close-icon:after {
+            content: "X";
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #0f0f0f;
+            border-radius: 50%;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            box-shadow: 0 0 2px #E50F0F;
+        }
+        .search-box:not(:valid) ~ .close-icon {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-wrapper">
+        <label class="prod" for="product-name">Product Name:</label> 
+        <input type="text" id="product-name" name="focus" required class="search-box" placeholder="Enter Product Name" />
+        <button class="close-icon" type="reset"></button>
+    </div>
+</body>
+</html>

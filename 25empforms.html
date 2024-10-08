@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color:none;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color:lightblue;
+        }
+        nav a {
+            color:blue;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh;
+        }
+        .form-container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow:#514caf;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #514caf;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color:blueviolet;
+        }
+        footer {
+            background-color:red;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+    <a href="#login">Login</a>
+    <a href="#register">Register</a>
+</nav>
+<header>
+    <h2>Welcome to emp  Home Page</h2>
+</header>
+<!-- Login Section -->
+<section id="login" class="container">
+    <div class="form-container">
+        <h3>Emp Login Form</h3>
+        <form>
+            <input type="text" placeholder="Enter Employee ID" required>
+            <input type="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</section>
+
+<!-- Register Section -->
+<section id="register" class="container">
+    <div class="form-container">
+        <h3> Welcome to Employee Registartion Form</h3>
+        <form>
+            <input type="text" placeholder="Name:" required>
+            <input type="password" placeholder="Password:" required>
+            <input type="email" placeholder="Email:" required>
+            <label>
+                <input type="radio" name="gender" value="male"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+            
+            <input type="Mobile No" placeholder="Mobile No:" required>
+            <input type="Address" placeholder="Address:" required>
+            
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container">
+    <div class="form-container">
+        <h3>Welcome to Contact Us</h3>
+        <form>
+            <input type="Mobile No" placeholder="Mobile No:" required>
+            <input type="text" placeholder="Website Name:" required>
+            <input type="email" placeholder="mail-id:" required>            
+            <textarea placeholder="Message" style="width:100%; height: 100px;" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="container">
+    <div class="form-container">
+        <h3>Welcome to About Us...............page</h3>
+        <h3><u>About</u></h3>
+        <p>Spring Boot is a project that is built on the top of the Spring Framework. It provides an easier and faster way to set up, configure and run both simple and web-based applications.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy;Arepalli gopi</p>
+</footer>
+
+</body>
+</html>
